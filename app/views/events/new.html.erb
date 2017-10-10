@@ -1,0 +1,25 @@
+<h1>New Event</h1>
+
+<%= form_for @event do |f| %>
+  <div class="form-fields">
+    <fieldset>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </fieldset>
+    <fieldset>
+      <%= f.label :location %>
+      <%= f.text_field :location %>
+    </fieldset>
+    <fieldset>
+      <%= f.label :description %>
+      <%= f.text_area :description %>
+    </fieldset>
+    <fieldset>
+      <%= f.label :date %>
+      <%= f.date_field :date %>
+    </fieldset>
+  </div>
+  <div class="form-actions">
+    <%= f.submit "Save" %>
+  </div>
+<% end %>
